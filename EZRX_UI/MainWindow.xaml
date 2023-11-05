@@ -1,0 +1,105 @@
+﻿<Window x:Class="EZRX_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EZRX_UI"
+        Icon="hedgehog_icon.jpg"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+  <Grid
+    Height="400"
+    Width="700">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="25"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="25"/>
+    </Grid.RowDefinitions>
+    <StackPanel
+      Grid.Row="0"
+      Grid.ColumnSpan="3"
+      >
+    </StackPanel>
+    <Border
+    Grid.Column="0"
+      Grid.Row="1"
+        BorderBrush="Black"
+        BorderThickness="2"
+      >
+      <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <TextBlock
+  TextWrapping="Wrap"
+  Text="{Binding Code, Mode=OneWay}" Grid.ColumnSpan="2">
+
+        </TextBlock>
+      </ScrollViewer>
+    </Border>
+    <StackPanel
+       Grid.Row="1" 
+       Grid.Column="2"
+      >
+      <Border
+        BorderBrush="Black"
+        BorderThickness="2"
+        >
+        <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  Height="345"
+                  >
+          <ItemsControl ItemsSource="{Binding Prompts}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                  <Image Source="hedgehog_icon.jpg" Width="16" Height="16" />
+                  <Border CornerRadius="5" Padding="4">
+                    <!--<Border.Background>
+                      <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="Blue" Offset="0.0" />
+                        <GradientStop Color="White" Offset="0.5" />
+                        <GradientStop Color="Blue" Offset="1.0" />
+                      </LinearGradientBrush>
+                    </Border.Background>-->
+                    <TextBlock
+                    HorizontalAlignment="Center"
+                    Width="300"
+                    Text="{Binding Message}" TextWrapping="Wrap"/>
+                    </Border>
+                </StackPanel>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </ScrollViewer>
+      </Border>
+    </StackPanel>
+    <DockPanel
+        Grid.Column="1"
+        Grid.Row="2"
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center"
+        >
+      <TextBox 
+          Width="300"
+          Text="{Binding Prompt, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+      <Button
+      HorizontalAlignment="Right"
+      VerticalAlignment="Bottom"
+        Command="{Binding SendMessageCommand}"
+        KeyUp="Button_KeyUp"
+        >
+        Send
+      </Button>
+    </DockPanel>
+
+    <!--<Button
+      Grid.Row="2"
+      Grid.Column="2"
+      VerticalAlignment="Center"
+        >
+      Evaluate
+    </Button>-->
+  </Grid>
+</Window>

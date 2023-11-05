@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZRX", "EZRX.csproj", "{F59B00FD-3581-4D5C-9F25-03E5AD6517BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZRX_UI", "..\EZRX_UI\EZRX_UI.csproj", "{80EC1EF3-274A-4F15-829E-8EA54B6C6ED3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F59B00FD-3581-4D5C-9F25-03E5AD6517BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F59B00FD-3581-4D5C-9F25-03E5AD6517BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F59B00FD-3581-4D5C-9F25-03E5AD6517BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F59B00FD-3581-4D5C-9F25-03E5AD6517BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80EC1EF3-274A-4F15-829E-8EA54B6C6ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80EC1EF3-274A-4F15-829E-8EA54B6C6ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80EC1EF3-274A-4F15-829E-8EA54B6C6ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80EC1EF3-274A-4F15-829E-8EA54B6C6ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17141EAA-0EEE-4D86-B731-622F021DD8CA}
+	EndGlobalSection
+EndGlobal

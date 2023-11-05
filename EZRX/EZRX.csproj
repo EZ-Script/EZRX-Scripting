@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+	
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <Version>1.0</Version>
+    <Title>EZRX</Title>
+    <Description>Description of EZRX</Description>
+    <TargetExt>.gha</TargetExt>
+    <UseWpf>true</UseWpf>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Grasshopper" Version="7.24.22308.15001" IncludeAssets="compile;build" />
+    <PackageReference Include="OpenAI" Version="1.7.2" />
+    <PackageReference Include="Rhino3dm" Version="7.15.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\EZRX_UI\EZRX_UI.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="Ezrx.Rhino">
+      <HintPath>obj\Debug\net48\Ezrx.Rhino.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+</Project>
