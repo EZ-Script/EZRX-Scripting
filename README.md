@@ -39,6 +39,21 @@ Once we arrived at the we designed and coded three primary components:
 * [Ara3D Library](https://github.com/ara3d/ara3d) - utility library and convenience functions
 * [OpenAI Unoffical .NET API](https://github.com/OkGoDoIt/OpenAI-API-dotnet) 
 
+# Cloning the Repository 
+
+This module used the `github.com\ara3d\ara3d` project as a submodule.
+
+From the command-line you can pull the submodules using:
+
+```
+git submodule update --init --recursive
+```
+
+# Building and Running the Code
+
+We only had time to get the code running on one user's machine and 
+unfortunately do not have the steps documented to run the system.   
+
 # What we learned 
 
 * Don't post API keys to Github
@@ -70,20 +85,7 @@ We only had 26 hours to write the code and submit the presentation so there is a
 * Allow the generated code to be used in other context
 * Train models to create and recognize a generic structure for describing inputs/outputs 
 
-# Cloning the Repository 
 
-This module used the `github.com\ara3d\ara3d` project as a submodule.
-
-From the command-line you can pull the submodules using:
-
-```
-git submodule update --init --recursive
-```
-
-# Building and Running the Code
-
-We only had time to get the code running on one user's machine. 
-We unfortunately do not have the steps documented to copy and run the files. 
 
 # Who are We
 
@@ -97,4 +99,6 @@ We are the EZ Script team.
 * Marcelo Villalba - Software Engineer
 
 ![ezrx-img_3665](https://github.com/EZ-Script/EZRX-Scripting/assets/1759994/8a5a9ae2-b759-4b8d-a2f2-2dbbda13120b)
+
+<img width="183" alt="image" src="https://github.com/EZ-Script/EZRX-Scripting/assets/1759994/6b446619-c935-4029-b7f8-42e4312101c0">
 
