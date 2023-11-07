@@ -72,7 +72,7 @@ namespace EZRX_UI
 
         private void StartAPI()
         {
-            string modelName = "gpt-4";
+            string modelName = "gpt-4-1106-preview";
 
             OpenAIAPI api = new OpenAIAPI("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");
 
